@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Galería</title>
+<link href="css/estilo_proyecto.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="css/zoom.css">
+
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+<style type="text/css">
+#contenedor {
+	position: relative;
+	width: 1100px;
+	height: 915px;
+	z-index: 1;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#encabezado {
+	position: absolute;
+	width: 1100px;
+	height: 100px;
+	z-index: 1;
+	background-image: url(imagenes/encabezado.jpg);
+	background-repeat: repeat;
+	background-size: 100% 100%;
+}
+.imagenes {
+	margin-left: 15px;
+	border-radius: 10%;
+}
+.titulo {
+	background-color: rgba(0,0,0,0.5);
+}
+#menu {
+	position: absolute;
+	width: 1100px;
+	height: 40px;
+	z-index: 100;
+	left: 0px;
+	top: 100px;
+	background-color: #373C5A;
+}
+#lateral_izquierdo {
+	position: absolute;
+	width: 200px;
+	height: 700px;
+	z-index: 2;
+	top: 140px;
+	background-color: #FFF;
+}
+#contenido {
+	position: absolute;
+	width: 700px;
+	height: 700px;
+	z-index: 2;
+	left: 200px;
+	top: 140px;
+	background-color: #FFF;
+}
+#lateral_derecho {
+	position: absolute;
+	width: 200px;
+	height: 700px;
+	z-index: 2;
+	left: 900px;
+	top: 140px;
+	background-color: #FFF;
+}
+#pie_pagina {
+	position: absolute;
+	width: 1100px;
+	height: 75px;
+	z-index: 2;
+	left: 0px;
+	top: 840px;
+	background-color: #373C5A;
+	text-align: center;
+}
+#opciones {
+	position: absolute;
+	width: 700px;
+	height: 110px;
+	z-index: 1;
+	top: 50px;
+}
+#irazu {
+	position: absolute;
+	width: 700px;
+	height: 400px;
+	z-index: 2;
+	left: 0px;
+	top: 175px;
+	visibility: hidden;
+}
+#arenal {
+	position: absolute;
+	width: 700px;
+	height: 400px;
+	z-index: 3;
+	top: 175px;
+	visibility: hidden;
+}
+#poas {
+	position: absolute;
+	width: 700px;
+	height: 400px;
+	z-index: 4;
+	top: 175px;
+	visibility: hidden;
+}
+#turrialba {
+	position: absolute;
+	width: 700px;
+	height: 400px;
+	z-index: 5;
+	top: 175px;
+	visibility: hidden;
+}
+#rincon_de_la_vieja {
+	position: absolute;
+	width: 700px;
+	height: 400px;
+	z-index: 6;
+	top: 175px;
+	visibility: hidden;
+}
+#titulo {
+	position: absolute;
+	width: 1100px;
+	height: 100px;
+	z-index: 2;
+}
+
+.gallery {
+}
+#apDiv1 {
+	position: absolute;
+	width: 200px;
+	height: 114px;
+	z-index: 1;
+	top: 10px;
+}
+#apDiv2 {
+	position: absolute;
+	width: 200px;
+	height: 109px;
+	z-index: 2;
+	top: 134px;
+}
+#apDiv3 {
+	position: absolute;
+	width: 200px;
+	height: 95px;
+	z-index: 3;
+	top: 253px;
+}
+#apDiv4 {
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	z-index: 4;
+	top: 358px;
+}
+#apDiv5 {
+	position: absolute;
+	width: 200px;
+	height: 110px;
+	z-index: 5;
+	top: 468px;
+}
+#apDiv6 {
+	position: absolute;
+	width: 200px;
+	height: 97px;
+	z-index: 6;
+	top: 588px;
+}
+#apDiv7 {
+	position: absolute;
+	width: 200px;
+	height: 131px;
+	z-index: 1;
+	top: 10px;
+}
+#apDiv8 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 2;
+	top: 151px;
+}
+#apDiv9 {
+	position: absolute;
+	width: 200px;
+	height: 95px;
+	z-index: 3;
+	top: 276px;
+}
+#apDiv10 {
+	position: absolute;
+	width: 200px;
+	height: 63px;
+	z-index: 4;
+	top: 381px;
+}
+#apDiv11 {
+	position: absolute;
+	width: 200px;
+	height: 99px;
+	z-index: 5;
+	top: 454px;
+}
+#apDiv12 {
+	position: absolute;
+	width: 200px;
+	height: 116px;
+	z-index: 2;
+	top: 563px;
+}
+</style>
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+function MM_effectShake(targetElement)
+{
+	Spry.Effect.DoShake(targetElement);
+}
+function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+{
+	Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+}
+function MM_effectGrowShrink(targetElement, duration, from, to, toggle, referHeight, growFromCenter)
+{
+	Spry.Effect.DoGrow(targetElement, {duration: duration, from: from, to: to, toggle: toggle, referHeight: referHeight, growCenter: growFromCenter});
+}
+function MM_effectSlide(targetElement, duration, from, to, toggle)
+{
+	Spry.Effect.DoSlide(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+}
+function MM_effectBlind(targetElement, duration, from, to, toggle)
+{
+	Spry.Effect.DoBlind(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+}
+</script>
+</head>
+
+<body>
+<div id="contenedor">
+  <div id="encabezado">
+    <div class="titulo" id="titulo">
+    	<h1>Galería</h1>
+    </div>
+  </div>
+  <div id="menu">
+    <ul id="MenuBar1" class="MenuBarHorizontal">
+      <li>
+        <div align="center"><a href="index.html">INICIO</a> </div>
+      </li>
+      <li>
+        <div align="center"><a href="historia.html" class="MenuBarItemSubmenu">HISTORIA</a>
+          <ul>
+            <li><a href="#">Informaci&oacute;n</a></li>
+            <li><a href="#" class="MenuBarItemSubmenu">Erupciones Hist&oacute;ricas</a>
+              <ul>
+                <li><a href="#">Volc&aacute;n Iraz&uacute;</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div align="center"><a href="#">GALERIA</a> </div>
+      </li>
+      <li>
+        <div align="center"><a href="videos.html">VIDEOS</a></div>
+      </li>
+      <li>
+        <div align="center"><a href="contactos.html">CONTACTOS</a></div>
+      </li>
+    </ul>
+  </div>
+  <div class="gallery" id="lateral_izquierdo">
+    <br />
+    <div id="apDiv1">
+    	<a href="imagenes/arenal_2.jpg"><img src="imagenes/arenal_2.jpg" width="170" height="114" class="imagenes" /></a>
+    </div>
+    <div id="apDiv2">
+   	    <a href="imagenes/barva.jpg"><img src="imagenes/barva.jpg" width="170" height="109" class="imagenes" /></a>
+    </div>
+    <div id="apDiv3">
+        <a href="imagenes/cacho_negro.jpg"><img src="imagenes/cacho_negro.jpg" width="170" height="95" class="imagenes" /></a>
+    </div>
+    <div id="apDiv4">
+        <a href="imagenes/chato.jpg"><img src="imagenes/chato.jpg" width="170" height="100" class="imagenes" /></a>
+    </div>
+    <div id="apDiv5">
+        <a href="imagenes/irazu_2.jpg"><img src="imagenes/irazu_2.jpg" width="170" height="110" class="imagenes" /></a>
+    </div>
+	<div id="apDiv6">
+    	<a href="imagenes/turrialba_2.jpg"><img src="imagenes/turrialba_2.jpg" width="170" height="97" class="imagenes" /></a>
+  	</div>
+    <br />
+  </div>
+  <div id="contenido">
+    <div id="opciones"><img src="imagenes/volcan_irazu.jpg" width="140" height="110" onmouseover="MM_showHideLayers('irazu','','show');MM_effectAppearFade('irazu', 2000, 0, 100, false)" onmouseout="MM_showHideLayers('irazu','','hide')" /><img src="imagenes/volcan_arenal.jpg" width="140" height="110" onmouseover="MM_showHideLayers('arenal','','show');MM_effectGrowShrink('arenal', 2000, '0%', '100%', false, false, true)" onmouseout="MM_showHideLayers('arenal','','hide')" /><img src="imagenes/volcan_poas.jpg" width="140" height="110" onmouseover="MM_showHideLayers('poas','','show');MM_effectSlide('poas', 2000, '0%', '100%', false)" onmouseout="MM_showHideLayers('poas','','hide')" /><img src="imagenes/Turrialba.jpeg" width="140" height="110" onmouseover="MM_showHideLayers('turrialba','','show');MM_effectShake('turrialba')" onmouseout="MM_showHideLayers('turrialba','','hide')" /><img src="imagenes/volcan_rincon_de_la_vieja.jpg" width="140" height="110" onmouseover="MM_showHideLayers('rincon_de_la_vieja','','show');MM_effectBlind('rincon_de_la_vieja', 2000, '0%', '100%', false)" onmouseout="MM_showHideLayers('rincon_de_la_vieja','','hide')" /></div>
+    <div id="irazu"><img src="imagenes/volcan_irazu.jpg" width="700" height="400" /></div>
+    <div id="arenal"><img src="imagenes/volcan_arenal.jpg" width="700" height="400" /></div>
+    <div id="poas"><img src="imagenes/volcan_poas.jpg" width="700" height="400" /></div>
+    <div id="turrialba"><img src="imagenes/Turrialba.jpeg" width="700" height="400" /></div>
+    <div id="rincon_de_la_vieja"><img src="imagenes/volcan_rincon_de_la_vieja.jpg" width="700" height="400" /></div>
+    <embed src="media/sonido_fondo.mp3" width="32" height="32"></embed>
+  </div>
+  <div class="gallery" id="lateral_derecho">
+    <br />
+    <div id="apDiv7">
+	    <a href="imagenes/miravalles.jpg"><img src="imagenes/miravalles.jpg" width="170" height="131" class="imagenes" /></a>
+    </div>
+    <div id="apDiv8">
+        <a href="imagenes/orosí.jpg"><img src="imagenes/orosí.jpg" width="170" height="115" class="imagenes" /></a>
+    </div>
+    <div id="apDiv9">
+        <a href="imagenes/platanar.jpg"><img src="imagenes/platanar.jpg" width="170" height="95" class="imagenes" /></a>
+    </div>
+    <div id="apDiv10">
+        <a href="imagenes/poas_2.jpg"><img src="imagenes/poas_2.jpg" width="170" height="63" class="imagenes" /></a>
+    </div>
+    <div id="apDiv11">
+        <a href="imagenes/rincon_de_la_vieja_2.jpg"><img src="imagenes/rincon_de_la_vieja_2.jpg" width="170" height="99" class="imagenes" /></a>
+    </div>
+    <div id="apDiv12">
+        <a href="imagenes/tenorio.jpg"><img src="imagenes/tenorio.jpg" width="170" height="116" class="imagenes" /></a> 
+    </div>
+    <br />
+  </div>
+  <div id="pie_pagina">
+    <h5>Diseño de Páginas Web<br />
+      Ismael Lara Cubero</h5>
+  </div>
+</div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="js/zoom.min.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
